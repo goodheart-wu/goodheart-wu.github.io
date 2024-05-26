@@ -99,6 +99,11 @@
         $("#footer").load("footer.html");
     })
 
+    // nav 호출
+    $(function(){
+        $("#nav").load("nav.html");
+    })
+
     // mail 전송
     
 
