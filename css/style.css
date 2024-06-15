@@ -195,7 +195,7 @@ body{
 }
 
 @media (max-width: 768px) {
-    #header-carousel .carousel-item {
+    #header-carousel .carousel-item {   
         position: relative;
         min-height: 450px;
     }
@@ -205,6 +205,28 @@ body{
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+    .set-side {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-side {
+        width: 100% !important; 
+        background-color: #ffffff !important;
+        padding: 10vh 3vh 0 !important;
+    }
+
+    .right-side {
+        width: 100% !important;
+        /* overflow-y: auto !important; */
+        /* Enable vertical scroll for the right side */
+        overflow-y: hidden;
+        padding: 20px !important;
+    }
+
+    .content{
+        height: 100%;
     }
 }
 

@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/logo_original.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,6 +32,64 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .tab-container {
+            display: flex;
+            justify-content: center;
+            /* 가로 방향 중앙 정렬 */
+            align-items: center;
+            /* 세로 방향 중앙 정렬 */
+            width: 60%;
+            background-color: #ffffff;
+            border: 2px solid #333333;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: auto;
+            margin-bottom: 100px;
+
+        }
+
+        .tab {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            background-color: #eeeeee;
+            border-right: 2px solid #333333;
+            transition: background-color 0.3s ease;
+        }
+
+        .tab:last-child {
+            border-right: none;
+        }
+
+        .tab:hover {
+            background-color: #dddddd;
+        }
+
+        .tab-active {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            border-right: 2px solid #333333;
+            transition: background-color 0.3s ease;
+        background-color: #761e3c;
+    /* 활성화된 탭의 배경색 */
+        }
+        
+        .tab-active>a {
+            color: #e8dde2;
+            /* 활성화된 탭의 글자색 */
+            font-weight: bold;
+            /* 활성화된 탭의 글자 굵기 */
+        }
+
+        .active-tab:hover {
+            background-color: #45a049;
+            /* 활성화된 탭의 호버 배경색 */
+        }
+    </style>
 </head>
 
 <body>
@@ -57,16 +115,7 @@
                     <div class="navbar-nav ms-auto">
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">소개</a>
-                        <div class="nav-item dropdown">
-                            <!-- data-bs-toggle="dropdown" 삭제 -->
-                            <a href="story.html" class="nav-link dropdown-toggle active" >활동</a>
-                            <div class="dropdown-menu bg-light rounded-0 m-0">
-                                <a href="news.html" class="dropdown-item">선한마음소식</a>
-                                <a href="volunteer.html" class="dropdown-item">봉사활동</a>
-                                <a href="forum.html" class="dropdown-item">포럼&컨퍼런스</a>
-                                <a href="education.html" class="dropdown-item">교육&행사</a>
-                            </div>
-                        </div>
+                        <a href="story.html" class="nav-item nav-link active">활동</a>
                         <a href="newsletter.html" class="nav-item nav-link">뉴스레터</a>
                         <!-- <a href="store.html" class="nav-item nav-link">Store</a> -->
                         <a href="contact.html" class="nav-item nav-link">문의하기</a>
@@ -90,6 +139,12 @@
     <!-- 404 Start -->
     <div class="container-xxl py-5">
         <div class="container">
+            <div class="tab-container">
+                <div class="tab"><a href="news.html">선한마음소식</a></div>
+                <div class="tab-active"><a href="volunteer.html">봉사활동</a></div>
+                <div class="tab"><a href="forum.html">포럼&컨퍼런스</a></div>
+                <div class="tab"><a href="education.html">교육행사</a></div>
+            </div>
             <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="fs-5 fw-medium fst-italic text-primary">Online Store</p>
                 <h1 class="display-6">Want to stay healthy? Choose tea taste</h1>

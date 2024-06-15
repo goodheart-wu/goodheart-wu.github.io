@@ -9,12 +9,14 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/logo_original.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -22,7 +24,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5f2164cb4e.js" crossorigin="anonymous"></script>
-    
+
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -32,16 +34,72 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .tab-container {
+            display: flex;
+            justify-content: center;
+            /* 가로 방향 중앙 정렬 */
+            align-items: center;
+            /* 세로 방향 중앙 정렬 */
+            width: 60%;
+            background-color: #ffffff;
+            border: 2px solid #333333;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: auto;
+            margin-bottom: 100px;
+
+        }
+
+        .tab {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            background-color: #eeeeee;
+            border-right: 2px solid #333333;
+            transition: background-color 0.3s ease;
+        }
+
+        .tab:last-child {
+            border-right: none;
+        }
+
+        .tab:hover {
+            background-color: #dddddd;
+        }
+
+        .tab-active {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            border-right: 2px solid #333333;
+            transition: background-color 0.3s ease;
+            background-color: #761e3c;
+            /* 활성화된 탭의 배경색 */
+            color: #e8dde2;
+            /* 활성화된 탭의 글자색 */
+            font-weight: bold;
+            /* 활성화된 탭의 글자 굵기 */
+        }
+
+        .active-tab:hover {
+            background-color: #45a049;
+            /* 활성화된 탭의 호버 배경색 */
+        }
+    </style>
 </head>
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
 
-    
+
     <!-- Navbar Start -->
     <div class="container-fluid bg-white sticky-top">
         <div class="container">
@@ -57,16 +115,7 @@
                     <div class="navbar-nav ms-auto">
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">소개</a>
-                        <div class="nav-item dropdown">
-                            <!-- data-bs-toggle="dropdown" 삭제 -->
-                            <a href="story.html" class="nav-link dropdown-toggle active" >활동</a>
-                            <div class="dropdown-menu bg-light rounded-0 m-0">
-                                <a href="news.html" class="dropdown-item">선한마음소식</a>
-                                <a href="volunteer.html" class="dropdown-item">봉사활동</a>
-                                <a href="forum.html" class="dropdown-item">포럼&컨퍼런스</a>
-                                <a href="education.html" class="dropdown-item">교육&행사</a>
-                            </div>
-                        </div>
+                        <a href="story.html" class="nav-item nav-link active">활동</a>
                         <a href="newsletter.html" class="nav-item nav-link">뉴스레터</a>
                         <!-- <a href="store.html" class="nav-item nav-link">Store</a> -->
                         <a href="contact.html" class="nav-item nav-link">문의하기</a>
@@ -101,9 +150,15 @@
     <!-- 선한마음소식 -->
     <div class="container-fluid product py-5 my-5">
         <div class="container py-5">
+            <div class="tab-container">
+                <div class="tab"><a href="news.html">선한마음소식</a></div>
+                <div class="tab"><a href="volunteer.html"></a>봉사활동</div>
+                <div class="tab"><a href="forum.html"></a>포럼&컨퍼런스</div>
+                <div class="tab"><a href="education.html"></a>교육행사</div>
+            </div>
             <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <!-- <p class="fs-5 fw-medium fst-italic text-primary">활동</p> -->
-                
+
                 <h1 class="display-6">선한마음소식</h1>
             </div>
             <div class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.5s">
@@ -136,8 +191,9 @@
                     </div>
                 </a>
             </div>
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" >
-                <a href="news.html" class="btn btn-primary rounded-pill py-3 px-5" style="width: auto; margin: 5% 0 0 0;">더보기</a>
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s">
+                <a href="news.html" class="btn btn-primary rounded-pill py-3 px-5"
+                    style="width: auto; margin: 5% 0 0 0;">더보기</a>
             </div>
         </div>
     </div>
@@ -179,7 +235,7 @@
                     </div>
                 </a>
             </div>
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" >
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s">
                 <a href="" class="btn btn-primary rounded-pill py-3 px-5" style="width: auto; margin: 5% 0 0 0;">더보기</a>
             </div>
         </div>
@@ -222,7 +278,7 @@
                     </div>
                 </a>
             </div>
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" >
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s">
                 <a href="" class="btn btn-primary rounded-pill py-3 px-5" style="width: auto; margin: 5% 0 0 0;">더보기</a>
             </div>
         </div>
@@ -265,7 +321,7 @@
                     </div>
                 </a>
             </div>
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" >
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s">
                 <a href="" class="btn btn-primary rounded-pill py-3 px-5" style="width: auto; margin: 5% 0 0 0;">더보기</a>
             </div>
         </div>
@@ -277,7 +333,8 @@
     <!-- Footer End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->

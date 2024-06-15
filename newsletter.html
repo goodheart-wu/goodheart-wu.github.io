@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>선한마음연합</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/logo_original.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -22,7 +21,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5f2164cb4e.js" crossorigin="anonymous"></script>
-    
+
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -32,106 +31,303 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+        }
+
+        .container-scroll {
+            display: flex;
+            width: 100%;
+            
+            flex-wrap: wrap;
+            
+        }
+
+        .set-side {
+            display: flex;
+        }
+
+        .left-side {
+            width: 50%;
+            background-color: #ffffff;
+            padding: 5vh 20vh 0;
+        }
+
+        .right-side {
+            width: 50%;
+            overflow-y: auto;
+            /* Enable vertical scroll for the right side */
+            padding: 20px;
+        }
+
+        .content {
+            height: 85vh;
+            /* Adjust this height for more or less content */
+        }
+
+        .nav-scroll {
+            overflow: hidden;
+        }
+
+        .footer {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .navbar .navbar-brand {
+            padding-top: 1vh;
+            width: 170px;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
-    </div>
-    <!-- Spinner End -->
-
-    
-    <!-- Navbar Start -->
-    <div class="container-fluid bg-white sticky-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
-                <a href="index.html" class="navbar-brand">
-                    <img class="img-fluid" src="img/logo_vertical.png" alt="Logo">
-                </a>
-                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">소개</a>
-                        <div class="nav-item dropdown">
-                            <!-- data-bs-toggle="dropdown" 삭제 -->
-                            <a href="story.html" class="nav-link dropdown-toggle" >활동</a>
-                            <div class="dropdown-menu bg-light rounded-0 m-0">
-                                <a href="news.html" class="dropdown-item">선한마음소식</a>
-                                <a href="volunteer.html" class="dropdown-item">봉사활동</a>
-                                <a href="forum.html" class="dropdown-item">포럼&컨퍼런스</a>
-                                <a href="education.html" class="dropdown-item">교육&행사</a>
-                            </div>
+    <div class="container-scroll">
+        <!-- Navbar Start -->
+        <div class="container-fluid bg-white sticky-top nav-scroll">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
+                    <a href="index.html" class="navbar-brand">
+                        <img class="img-fluid" src="img/logo_horizon.png" alt="Logo">
+                    </a>
+                    <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="about.html" class="nav-item nav-link">소개</a>
+                            <a href="story.html" class="nav-item nav-link">활동</a>
+                            <!-- <div class="nav-item dropdown">
+                                //data-bs-toggle="dropdown" 삭제
+                                <a href="story.html" class="nav-link dropdown-toggle">활동</a>
+                                <div class="dropdown-menu bg-light rounded-0 m-0">
+                                    <a href="news.html" class="dropdown-item">선한마음소식</a>
+                                    <a href="volunteer.html" class="dropdown-item">봉사활동</a>
+                                    <a href="forum.html" class="dropdown-item">포럼&컨퍼런스</a>
+                                    <a href="education.html" class="dropdown-item">교육&행사</a>
+                                </div>
+                            </div> -->
+                            <a href="newsletter.html" class="nav-item nav-link active">뉴스레터</a>
+                            <!-- <a href="store.html" class="nav-item nav-link">Store</a> -->
+                            <a href="contact.html" class="nav-item nav-link">문의하기</a>
                         </div>
-                        <a href="newsletter.html" class="nav-item nav-link active">뉴스레터</a>
-                        <!-- <a href="store.html" class="nav-item nav-link">Store</a> -->
-                        <a href="contact.html" class="nav-item nav-link">문의하기</a>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
+    
         </div>
-    </div>
-    <!-- Navbar End -->
+        <!-- Navbar End -->
+        <!-- side -->
+        <div class="set-side">
+            <div class="left-side">
+                <p>SPREAD by B는 &lt;B&gt;가 다뤄온 브랜드는</p>
+                물론, 내 주변의 삶과 환경에서 시작해 비즈<br>
+                니스 지형에까지 영향을 미치는 크고 작은 브<br>
+                랜드의 행보를 지속적으로 관찰하며 그들의<br>
+                창의적 아이디어와 목소리를 기사와 인터뷰,<br>
+                영상 등의 컨텐츠로 제작해 전달하고자 합니<br>
+                디</p>
+                <h2>"사람과사람"의 이야기</h2>
+            </div>
+            <div class="right-side">
+                <div class="content">
+                    <div class="row">
+                        <!-- 202404 -->
+                        <div class="col-lg-4">
+                            <img class="img-fluid" src="img/news202404.jpg" alt="" style="height: 100%;">
+                        </div>
 
+                        <div class="col-lg-8">
+                            <p class="fs-5 fw-medium fst-italic text-primary">2024년 4월 뉴스레터</p>
 
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container text-center py-5">
-            <h1 class="display-2 text-light mb-4 animated slideInDown">뉴스레터</h1>
-        </div>
-    </div>
-    <!-- Page Header End -->
+                            <p class="mb-4">01 베이비박스 아기돌봄 봉사👶🍼<br>
+                                02 선한마음 X 에다러브 소망의집 봉사🌸❤️<br>
+                                03 선덕원 공부와 활동</p>
+                            <a href="https://stib.ee/lpDC" target='_blank' class="btn btn-primary rounded-pill">상세 보기</a>
+                        </div>
+                        <div class="col-lg-12" style="margin-bottom: 3.875rem"><br></div>
+                        <!-- 202403 -->
+                        <div class="col-lg-4">
+                            <img class="img-fluid" src="img/news202403.jpg" alt="" style="height: 100%;">
+                        </div>
 
+                        <div class="col-lg-8">
+                            <p class="fs-5 fw-medium fst-italic text-primary">2024년 3월 뉴스레터</p>
 
-    <!-- 뉴스레터 -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <img class="img-fluid" src="img/news1.jpg" alt="" style="height: 100%;">
-                </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="section-title">
-                        <p class="fs-5 fw-medium fst-italic text-primary">이 달의 뉴스레터</p>
-                        <h1 class="display-6">선한마음연합 <br>2023년 7월 뉴스레터</h1>
+                            <p class="mb-4">01 베이비박스 아기돌봄 봉사👶🍼<br>
+                                02 다품 곁부축이팀과 함께 쪽방촌에 전하는 사랑🤝<br>
+                                03 선덕원 공부와 활동</p>
+                            <a href="https://stib.ee/eKzB" target='_blank' class="btn btn-primary rounded-pill">상세 보기</a>
+                        </div>
+                        <div class="col-lg-12" style="margin-bottom: 3.875rem"><br></div>
+                        <!-- 202402 -->
+                        <div class="col-lg-4">
+                            <img class="img-fluid" src="img/news202402.jpg" alt="" style="height: 100%;">
+                        </div>
+
+                        <div class="col-lg-8">
+                            <p class="fs-5 fw-medium fst-italic text-primary">2024년 2월 뉴스레터</p>
+
+                            <p class="mb-4">01 선한마음연합X에다러브 소망의 집 봉사<br>
+                                02 가온들찬빛 봉사활동<br>
+                                03 선덕원 공부와 활동<br>
+                                04 쪽방촌 어르신 봉사<br>
+                                05 쪽방촌 상담소의 만두 만들기🥟</p>
+                            <a href="https://stib.ee/cKzB" target='_blank' class="btn btn-primary rounded-pill">상세 보기</a>
+                        </div>
+                        <div class="col-lg-12" style="margin-bottom: 3.875rem"><br></div>
+                        <!-- 202401 -->
+                        <div class="col-lg-4">
+                            <img class="img-fluid" src="img/news202401.jpg" alt="" style="height: 100%;">
+                        </div>
+
+                        <div class="col-lg-8">
+                            <p class="fs-5 fw-medium fst-italic text-primary">2024년 1월 뉴스레터</p>
+
+                            <p class="mb-4">01 응답하라 2024 | 선덕원 <br>
+                                02 일취월장 선덕원 공부교실!<br>
+                                03 소망의 집 봉사활동<br>
+                                04 김정문 설렁탕에서 보내는 든든한 사랑<br>
+                                05 가온들찬빛 봉사활동</p>
+                            <a href="https://stib.ee/aKzB" target='_blank' class="btn btn-primary rounded-pill">상세 보기</a>
+                        </div>
+                        <div class="col-lg-12" style="margin-bottom: 3.875rem"><br></div>
+                        <!-- 202312 -->
+                        <div class="col-lg-4">
+                            <img class="img-fluid" src="img/news202312.jpg" alt="" style="height: 100%;">
+                        </div>
+
+                        <div class="col-lg-8">
+                            <p class="fs-5 fw-medium fst-italic text-primary">2023년 12월 뉴스레터</p>
+
+                            <p class="mb-4">01 소망의 집 봉사활동<br>
+                                02 선덕원 공부와 활동<br>
+                                03 선덕원의 새로운 이웃! 베이비박스 후원과 봉사🎁<br>
+                                04 가온들찬빛 봉사활동<br>
+                                05 따뜻한 겨울 나눔, 어르신을 위한 반찬봉사<br>
+                                06 사랑스러운 네팔 아기 후원<br>
+                                07 이웃들의 주거 환경을 책임진다! '한국사회공헌재단에서 한부모 단체에 가구를 지원하다'</p>
+                            <a href="https://stib.ee/YKzB" target='_blank' class="btn btn-primary rounded-pill">상세 보기</a>
+                        </div>
+                        <div class="col-lg-12" style="margin-bottom: 3.875rem"><br></div>
+                        <!-- 202311 -->
+                        <div class="col-lg-4">
+                            <img class="img-fluid" src="img/news202311.jpg" alt="" style="height: 100%;">
+                        </div>
+
+                        <div class="col-lg-8">
+                            <p class="fs-5 fw-medium fst-italic text-primary">2023년 11월 뉴스레터</p>
+
+                            <p class="mb-4">01 선한마음연합 MOU 협약 (with 사회공헌재단 & 농업회사법인 (주)백제)<br>
+
+                                02 슬기로운 선덕원생활<br>
+
+                                03 지금은 김장할 때!<br>
+
+                                04 가온들찬빛 봉사활동<br>
+
+                                05 따뜻한 겨울 나눔, 쪽방촌 어르신 봉사활동<br>
+                                06 독거노인 반찬봉사</p>
+                            <a href="https://stib.ee/WKzB" target='_blank' class="btn btn-primary rounded-pill">상세 보기</a>
+                        </div>
+                        <div class="col-lg-12" style="margin-bottom: 3.875rem"><br></div>
+                        <!-- 202310 -->
+                        <div class="col-lg-4">
+                            <img class="img-fluid" src="img/news202310.jpg" alt="" style="height: 100%;">
+                        </div>
+
+                        <div class="col-lg-8">
+                            <p class="fs-5 fw-medium fst-italic text-primary">2023년 10월 뉴스레터</p>
+
+                            <p class="mb-4">01 선덕원 친구들의 두근두근 학교 나들이🐥<br>
+
+                                02 슬기로운 선덕원 생활<br>
+
+                                03 필리핀 아기 용준이 후원👶</p>
+                            <a href="https://stib.ee/UKzB" target='_blank' class="btn btn-primary rounded-pill">상세 보기</a>
+                        </div>
+                        <div class="col-lg-12" style="margin-bottom: 3.875rem"><br></div>
+                        <!-- 202309 -->
+                        <div class="col-lg-4">
+                            <img class="img-fluid" src="img/news202309.jpg" alt="" style="height: 100%;">
+                        </div>
+
+                        <div class="col-lg-8">
+                            <p class="fs-5 fw-medium fst-italic text-primary">2023년 9월 뉴스레터</p>
+
+                            <p class="mb-4">01 제5회 하나인 글로벌 여성포럼, 귀환 동포의 한국살이와 지역특화형 비자<br>
+
+                                02 슬기로운 선덕원생활<br>
+
+                                03 쪽방촌 봉사활동<br>
+
+                                04 가을날의 가온들찬빛</p>
+                            <a href="https://stib.ee/SKzB" target='_blank' class="btn btn-primary rounded-pill">상세 보기</a>
+                        </div>
+                        <div class="col-lg-12" style="margin-bottom: 3.875rem"><br></div>
+                        <!-- 202308 -->
+                        <div class="col-lg-4">
+                            <img class="img-fluid" src="img/news202308.jpg" alt="" style="height: 100%;">
+                        </div>
+
+                        <div class="col-lg-8">
+                            <p class="fs-5 fw-medium fst-italic text-primary">2023년 8월 뉴스레터</p>
+
+                            <p class="mb-4">01 뜨거운 열기로 가득했던 선덕원 & 에다키즈 친구들의 수련회<br>
+
+                                02 선덕원 공부와 활동<br>
+
+                                03 동대문 쪽방촌 봉사활동<br>
+
+                                04 셀다의 아들, 용준이<br>
+
+                                05 선한마음 & 충신다품 | 사랑의 나눔 행사</p>
+                            <a href="https://stib.ee/QKzB" target='_blank' class="btn btn-primary rounded-pill">상세 보기</a>
+                        </div>
+                        <div class="col-lg-12" style="margin-bottom: 3.875rem"><br></div>
+                        <!-- 202307 -->
+                        <div class="col-lg-4">
+                            <img class="img-fluid" src="img/news202307.jpg" alt="" style="height: 100%;">
+                        </div>
+                        <br>
+                        <div class="col-lg-8">
+                            <p class="fs-5 fw-medium fst-italic text-primary">2023년 7월 뉴스레터</p>
+
+                            <p class="mb-4">01 하나인과 선한마음이 함께 한 "제4회 하나인 글로벌 여성포럼"<br>
+
+                                02 제 2회 원하다 컨퍼런스 | 선한마음연합 비전발표<br>
+
+                                03 가온들찬빛 봉사활동<br>
+
+                                04 선덕원 여름캠프 & 공부와 활동<br>
+
+                                05 고려인 아기 엄마들 위한 잔치 | 인천숭의교회</p>
+                            <a href="https://stib.ee/IKzB" target='_blank' class="btn btn-primary rounded-pill">상세 보기</a>
+                        </div>
+                        <div class="col-lg-12" style="margin-bottom: 3.875rem"><br></div>
                     </div>
-                    <p class="mb-4">01  하나인과 선한마음이 함께 한 "제4회 하나인 글로벌 여성포럼"<br>
-
-                        02  제 2회 원하다 컨퍼런스 | 선한마음연합 비전발표<br>
-                        
-                        03  가온들찬빛 봉사활동<br>
-                        
-                        04  선덕원 여름캠프 & 공부와 활동<br> 
-                        
-                        05  고려인 아기 엄마들 위한 잔치 | 인천숭의교회</p>
-                    <a href="https://www.goodheart.kr/" class="btn btn-primary rounded-pill py-3 px-5">Read More</a>
                 </div>
             </div>
-        </div>
+
+            </div>
+
+
+
     </div>
 
-    <!-- Footer Start -->
-    <div id="footer"></div>
-    <!-- Footer End -->
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
 
 </html>
