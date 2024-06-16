@@ -55,9 +55,9 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     z-index: 1000;
-    background-image: url('img/mou_back.png'); /* 벚꽃 이미지 URL */
+    /* background-image: url('img/mou_back.png'); 
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     text-align: center; /* 텍스트 정렬 중앙 */
     flex-direction: column;
     justify-content: center;
@@ -91,8 +91,8 @@
     <div class="container-fluid bg-white sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
-                <a href="index.html" class="navbar-brand">
-                    <img class="img-fluid" src="img/logo_vertical.png" alt="Logo">
+                <a href="index.html" class="navbar-brand" style="margin-top: 15px;">
+                    <img class="img-fluid" src="img/logo_original.png" alt="Logo" style="max-width: 60%;">
                 </a>
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -185,13 +185,14 @@
 
                 <!-- 다이얼로그를 담을 div -->
                 <div class="dialog-container" id="dialog_onehada">
-                    <p>원하다 MOU 소개글 입니다.</p>
+                    <strong>선한마음연합 X 원하다</strong>
+                    <p>"통일을 원하다 하나됨을 원하다" 통일 대한민국을 위해 전 세계 재외동포와 함께 통일을 준비하는 원하다와 함께 합니다.</p>
                     <button id="closeDialogLink_onehada">닫기</button>
                 </div>
 
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="store-item position-relative text-center">
-                        <img class="img-fluid" src="img/baekjae_mou.jpg" alt="" style="height: 30vh;">
+                        <img class="img-fluid" src="img/baekjae_mou.png" alt="" style="height: 30vh;">
                         <div class="store-overlay">
                             <button id="showDialogLink_baekjae" class="btn btn-primary rounded-pill py-2 px-4 m-2">간단
                                 소개<i class="fa fa-arrow-right ms-2"></i></button>
@@ -201,13 +202,14 @@
 
                 <!-- 다이얼로그를 담을 div -->
                 <div class="dialog-container" id="dialog_baekjae">
-                    <p>백제 MOU 소개글 입니다.</p>
+                    <strong>선한마음연합 X 농업회사법인(주) 백제</strong><p>
+                        국내 쌀을 사용하여 쌀국수와 떡국, 면류 등을 생산하는 기술을 가진 국내 식품 기업으로 기부와 나눔의 활동을 삶의 가치로 삼고 이웃 섬김에 최선의 노력을 다하겠다는 뜻을 가진 농업회사법인(주) 백제와 함께 합니다.</p>
                     <button id="closeDialogLink_baekjae">닫기</button>
                 </div>
 
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="store-item position-relative text-center">
-                        <img class="img-fluid" src="img/social_mou.jpg" alt="" style="height: 30vh;">
+                        <img class="img-fluid" src="img/social_mou.png" alt="" style="height: 30vh;">
                         <div class="store-overlay">
                             <button id="showDialogLink_social" class="btn btn-primary rounded-pill py-2 px-4 m-2">간단
                                 소개<i class="fa fa-arrow-right ms-2"></i></button>
@@ -217,7 +219,8 @@
 
                 <!-- 다이얼로그를 담을 div -->
                 <div class="dialog-container" id="dialog_social">
-                    <p>대한민국사회공헌재단 MOU 소개글 입니다.</p>
+                    <strong>선한마음연합 X 대한민국 사회공헌재단</strong><p>
+취약계층 아동의 안정적인 생활가구 지원과 주거환경 개선 등을 위한 '주거안정 개선사업'을 통해 '사람중심, Small Change(작은 변화)를 통한 행복한 사회 실현'이라는 봉사 정신의 뜻을 알리는 대한민국 사회공헌재단과 함께합니다.</p>
                     <button id="closeDialogLink_social">닫기</button>
                 </div>
 
@@ -234,21 +237,20 @@
             </div>
             <div class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.3s"
                 style="width: 80%; height: auto; margin: auto">
-                <a href="" class="d-block rounded">
-                    <img src="img/ttangGangHaneul_logo.png" alt="">
-                    </button>
-                    <a href="" class="d-block rounded">
-                        <img src="img/edaDream_black_logo.png" alt="">
-                        </button>
-                        <a href="" class="d-block rounded">
-                            <img src="img/edaDream_white_logo.png" alt="" style="margin-top: 100px;">
+                <!-- <a href="" class="d-block rounded"> -->
+                    <img src="img/eda_community_logo.png" alt="">
+                    <!-- </a> -->
+                        <!-- <a href="" class="d-block rounded"> -->
+                            <!-- <img src="img/ttanggang_logo.png" alt=""> -->
+                        <!-- </a> -->
+                        <!-- <a href="" class="d-block rounded"> -->
+                            <img src="img/hana_logo.png" alt="">
+                        <!-- </a> -->
+                        <a href="https://www.onehada.co.kr/" target="_blank" class="d-block rounded">
+                            <img src="img/onehada_logo_full.png" alt="">
                         </a>
-                        <a href="" class="d-block rounded">
-                            <img src="img/edaCommunity_logo.png" alt="" style="margin-top: 20px;">
-                        </a>
-                        <a href="" class="d-block rounded">
-                            <img src="img/onehada_logo.png" alt="">
-                        </a>
+                        <img src="img/ttanggang_logo.png" alt="">
+                        
             </div>
         </div>
     </div>
