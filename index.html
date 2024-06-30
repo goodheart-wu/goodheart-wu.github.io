@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-    
+
     <meta property="og:title" content="선한마음연합">
     <meta property="og:url" content="goodheart-wu.github.io">
     <meta property="og:type" content="website">
@@ -43,10 +43,11 @@
     <script src="//vjs.zencdn.net/7.10.2/video.min.js"></script>
 </head>
 <style>
-    body{
+    body {
         background-color: #F2EBEB;
     }
 </style>
+
 <body>
     <!-- Spinner Start -->
     <div id="spinner"
@@ -56,51 +57,86 @@
     <!-- Spinner End -->
 
     <!-- <header id="nav"></header> -->
-    
+
     <!-- </div> -->
     <!-- Carousel Start -->
-    <div class="container-fluid sticky-top" style="background-image: linear-gradient(rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.53)), url('img/main_header.jpg'); background-size: cover; backdrop-filter: blur(30px);">
+    <div class="container-fluid sticky-top" id="hide_nav"
+        style="display: none; background-image: linear-gradient(rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.53)), url('img/main_header.jpg'); background-size: cover; backdrop-filter: blur(30px);">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar py-2 py-lg-0">
                 <!-- <a href="index.html" style="width: 250px; height: auto">
                     <img class="img-fluid" src="img/logo_horizon.png" alt="Logo">
                 </a> -->
                 <!-- <a href="index.html" class="navbar-brand" style="margin-top: 15px;"> -->
-                    <img src="img/logo_white.png" alt="Logo" style="max-width: 60%; height: 8vh;">
+                <img src="img/logo_white.png" alt="Logo" style="max-width: 60%; height: 8vh;">
                 <!-- </a> -->
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto" >
+                    <div class="navbar-nav ms-auto">
                         <a href="index.html" class="nav-item nav-link" style="color: white;">Home</a>
                         <a href="about.html" class="nav-item nav-link" style="color: white;">소개</a>
                         <a href="story.html" class="nav-item nav-link" style="color: white;">활동</a>
                         <a href="newsletter.html" class="nav-item nav-link" style="color: white;">뉴스레터</a>
                         <!-- <a href="store.html" class="nav-item nav-link">Store</a> -->
-                        <a href="contact.html" class="nav-item nav-link" style="color: white;"  >문의하기</a>
+                        <a href="contact.html" class="nav-item nav-link" style="color: white;">문의하기</a>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
-    <div class="container-fluid px-0 mb-5" >
+
+    <div class="container-fluid px-0 mb-5">
         <div id="header-carousel" class="carousel carousel-fade" data-bs-ride="carousel">
             <!-- Navbar Start -->
             <!-- <div style="background-image: url('img/main_header.jpg'); z-index: 9999;"> -->
+
             <!-- Navbar End -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="w-100" src="img/main_header.jpg" alt="Image" style="height: 100vh; object-fit: cover;">
-                    <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.53); align-items: baseline;">
+                    <div class="carousel-caption"
+                        style="background-color: rgba(0, 0, 0, 0.53); align-items: baseline; flex-direction:column">
+                        <div class="container-fluid sticky-top">
+                            <div class="container">
+                                <nav class="navbar navbar-expand-lg navbar py-2 py-lg-0">
+                                    <!-- <a href="index.html" style="width: 250px; height: auto">
+                                        <img class="img-fluid" src="img/logo_horizon.png" alt="Logo">
+                                    </a> -->
+                                    <!-- <a href="index.html" class="navbar-brand" style="margin-top: 15px;"> -->
+                                    <img src="img/logo_white.png" alt="Logo" style="max-width: 60%; height: 8vh;">
+                                    <!-- </a> -->
+                                    <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarCollapse">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                                        <div class="navbar-nav ms-auto">
+                                            <a href="index.html" class="nav-item nav-link"
+                                                style="color: white;">Home</a>
+                                            <a href="about.html" class="nav-item nav-link" style="color: white;">소개</a>
+                                            <a href="story.html" class="nav-item nav-link" style="color: white;">활동</a>
+                                            <a href="newsletter.html" class="nav-item nav-link"
+                                                style="color: white;">뉴스레터</a>
+                                            <!-- <a href="store.html" class="nav-item nav-link">Store</a> -->
+                                            <a href="contact.html" class="nav-item nav-link"
+                                                style="color: white;">문의하기</a>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
                         <div class="container" style="margin-top: 8vw">
                             <div class="row justify-content-center" style="justify-content: flex-start !important;">
                                 <div class="col-lg-8 text-start">
                                     <p class="fs-2 text-white animated">사랑으로 품다</p>
                                     <h1 class="display-1 text-white mb-4 animated zoomIn">선한마음연합</h1>
-                                    <p style="margin-bottom: 30px;" class="fs-5 text-white animated">선한마음연합은 아이들을 보호하고 아동 인권을 증진하여 전세계 모든 아이들이 행복한 사회를<br> 만들기 위해 일하는 시민단체입니다.</p>
-                                    <a><a href="https://forms.gle/MV5TuS8oMbS9qsBg9" class="fs-5" target="_blank" style="margin-top: 30px; color: white; text-decoration: underline; text-underline-position : under;">회원가입</a>
+                                    <p style="margin-bottom: 30px;" class="fs-5 text-white animated">선한마음연합은 아이들을 보호하고
+                                        아동 인권을 증진하여 전세계 모든 아이들이 행복한 사회를<br> 만들기 위해 일하는 시민단체입니다.</p>
+                                    <a><a href="https://forms.gle/MV5TuS8oMbS9qsBg9" class="fs-5" target="_blank"
+                                            style="margin-top: 30px; color: white; text-decoration: underline; text-underline-position : under;">회원가입</a>
                                 </div>
                             </div>
                         </div>
@@ -128,41 +164,51 @@
     <div class="py-5" style="background-color: #F2EBEB; padding-bottom: 6rem !important;">
         <div class="container">
             <div class="row g-5">
-                        <div class="col-lg-6">
-                            <img class="img-fluid bg-white w-100 mb-3 wow fadeIn" data-wow-delay="0.2s" src="img/main_surve1_cut.jpg" alt="" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-                            <img class="img-fluid bg-white w-100 wow fadeIn" data-wow-delay="0.2s" src="img/main_surve2.jpg" alt="" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-                            <h4 style="margin-top: 30px;"><span style="margin-top: 30px; text-decoration: underline; text-underline-position : under;">선한마음</span>이 걸어온 길</h4>
-                            <p style="margin-top: 0; font-size: 1.0rem; margin-bottom: 20px;">우리는 때때로 다 헤아릴 수 없는 사연으로 혼자가 된 아이들을 볼 때,
-                                가슴 깊은 곳에서 올라오는 뜨거움을 느껴보았을 것입니다.
-                                아이들의 아픔에 공감하는 이들, 작은 위로와 도움을 건네고자 하는 이들이 모여
-                                선한마음연합이 만들어졌습니다.<br>
-            
-                                교육과 보살핌의 사각지대에 놓인 아이들을 보호하고 올바른 방식으로 교육하며
-                                자립할 수 있도록 도와주고, 아이들이 세상 안에서 힘이 들 때 언제나 함께 하는
-                                가족이 되겠습니다.</p>
-                        </div>
-                        <div class="col-lg-6">
-                            <img class="img-fluid bg-white w-100 wow fadeIn"  data-wow-delay="0.4s" src="img/main_surve3.jpg" alt="" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">
-                        </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid bg-white w-100 mb-3 wow fadeIn" data-wow-delay="0.2s"
+                        src="img/main_surve1_cut.jpg" alt=""
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                    <img class="img-fluid bg-white w-100 wow fadeIn" data-wow-delay="0.2s" src="img/main_surve2.jpg"
+                        alt="" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                    <h4 style="margin-top: 30px;"><span
+                            style="margin-top: 30px; text-decoration: underline; text-underline-position : under;">선한마음</span>이
+                        걸어온 길</h4>
+                    <p style="margin-top: 0; font-size: 1.0rem; margin-bottom: 20px;">우리는 때때로 다 헤아릴 수 없는 사연으로 혼자가 된 아이들을
+                        볼 때,
+                        가슴 깊은 곳에서 올라오는 뜨거움을 느껴보았을 것입니다.
+                        아이들의 아픔에 공감하는 이들, 작은 위로와 도움을 건네고자 하는 이들이 모여
+                        선한마음연합이 만들어졌습니다.<br>
+
+                        교육과 보살핌의 사각지대에 놓인 아이들을 보호하고 올바른 방식으로 교육하며
+                        자립할 수 있도록 도와주고, 아이들이 세상 안에서 힘이 들 때 언제나 함께 하는
+                        가족이 되겠습니다.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid bg-white w-100 wow fadeIn" data-wow-delay="0.4s" src="img/main_surve3.jpg"
+                        alt="" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">
+                </div>
 
 
             </div>
         </div>
     </div>
 
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 1800px !important; background-color: white;" >
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.2s"
+        style="max-width: 1800px !important; background-color: white;">
         <div class="container text-center">
             <div class="row justify-content-center">
-                    
-                    <img src="/img/work_load.png">
+
+                <img src="/img/work_load.png">
             </div>
         </div>
     </div>
 
-    <div class="text-start wow fadeInUp" data-wow-delay="0.3s" style="display: flex-start; justify-content: center; align-items: center; background-color: white; padding-left: 5vw;">
+    <div class="text-start wow fadeInUp" data-wow-delay="0.3s"
+        style="display: flex-start; justify-content: center; align-items: center; background-color: white; padding-left: 5vw;">
         <!-- <p class="fs-5 fw-medium fst-italic text-white">Testimonial</p> -->
-            <h1 class="display-6" style="padding-bottom: 3rem; text-align: left;">"사랑은 그 자체로 머무는 것이 아니라 <br>행동으로 이어져야 한다."</h1>
-        
+        <h1 class="display-6" style="padding-bottom: 3rem; text-align: left;">"사랑은 그 자체로 머무는 것이 아니라 <br>행동으로 이어져야 한다."
+        </h1>
+
     </div>
     <!-- Article Start -->
     <!-- <div class="container-xxl py-5">
@@ -187,116 +233,98 @@
 
 
     <!-- Video Start -->
-            <div class="" style="position:relative; width: 100%; height: 0; padding-top: 56%;">
-                <iframe style="position:absolute; top: 0; left: 0; width: 100%; height:100%;" allow="accelerometer; autoplay;" src="https://www.youtube.com/embed/4_8Os_C5naI?autoplay=1"></iframe>
-            </div>
+    <div class="" style="position:relative; width: 100%; height: 0; padding-top: 56%;">
+        <iframe style="position:absolute; top: 0; left: 0; width: 100%; height:100%;" allow="accelerometer; autoplay;"
+            src="https://www.youtube.com/embed/4_8Os_C5naI?autoplay=1"></iframe>
+    </div>
 
     <!-- Video End -->
 
 
-    <div class="container-fluid py-5 my-5">
-        <div class="container py-5">
-            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <!-- <p class="fs-5 fw-medium fst-italic text-primary">활동</p> -->
-                
-                <h1 class="display-6">최신글</h1>
-            </div>
-            <div class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.5s">
-                <a href="" class="d-block product-item rounded">
-                    <img src="img/product-1.jpg" alt="">
-                </a>
-                <a href="" class="d-block product-item rounded">
-                    <img src="img/product-2.jpg" alt="">
-                </a>
-                <a href="" class="d-block product-item rounded">
-                    <img src="img/product-3.jpg" alt="">
-                </a>
-                <a href="" class="d-block product-item rounded">
-                    <img src="img/product-4.jpg" alt="">
-                </a>
-            </div>
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" >
-                <a href="story.html" class="btn" style="width: auto; margin: 5% 0 0 0; border: 1px solid black; font-weight: bold;">more story</a>
+    <div class="container-xxl py-5" style="background-color: #F2F2F2 ; max-width: 1800px !important;">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <h1 style="text-decoration: underline; text-underline-position : under; line-height: 8vh;">
+                        <strong><I>
+                                NEWS<br>
+                                LETTER,
+                            </I>
+                        </strong>
+                    </h1>
+                    <!-- <img class="img-fluid mb-3" src="img/KakaoTalk_20240403_194806696_01.jpg" alt=""> -->
+                </div>
+                <!-- 1번 뉴스레터 -->
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s" style="background-color: white; padding-top: 1rem; margin-right: 10px;">
+                    <p class="fs-5 fw-medium fst-italic text-primary">2024년 5월 뉴스레터&nbsp;<a href="https://stib.ee/m4gC"
+                            target="_blank"><img style="width:5%" src="img/arrow.png"></a></p>
+                    <p class="mb-4">푸르른 나무와 따뜻한 햇살이 반기는 가정의 달 5월입니다. 가족, 친구, 스승 또 우리 이웃과 함께한 5월이었습니다👨‍👩‍👧‍👧 선한마음연합에도
+                        따뜻한 마음과 손길들이 오갔는데요! 이웃과 함께하는 것은 언제나 즐겁습니다. 그럼 이번 달 소식 함께 하실까요~?!</p>
+                    <p class="mb-4">01 사랑으로 가득한 소망의 집 봉사활동🏡💚<br>
+                        02 베이비박스 아기 돌보기 봉사활동👶🍼<br>
+                        03 선덕원 5월의 공부<br>
+                        04 선덕원의 어린이날🎈</p>
+
+                    <p class="mb-4">- 선한마음연합 후원소식 -<br>
+                        하나, 이웃에게 전하는 마음 "김정문 설렁탕"<br>
+                        둘, 특별후원금 소식💌</p>
+                </div>
+                <!-- 2번 뉴스레터 -->
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s" style="background-color: white; padding-top: 1rem;">
+                    <p class="fs-5 fw-medium fst-italic text-primary">2024년 4월 뉴스레터&nbsp;<a href="https://stib.ee/lpDC"
+                            target="_blank"><img style="width:5%" src="img/arrow.png"></a></p>
+
+                    <p class="mb-4">🌸분홍빛의 벚꽃이 흩날리고 푸른빛의 나뭇잎☘️이 반기는 4월입니다! 풍성한 꽃잎처럼 아름다운 우리 이웃들의 소식을 함께 보실까요?</p>
+
+                    <p class="mb-4">01 베이비박스 아기돌봄 봉사👶🍼<br>
+                        02 선한마음 X 에다러브 소망의집 봉사🌸❤️<br>
+                        03 선덕원 공부와 활동</p>
+
+                </div>
+                <!-- 공백 -->
+                <div class="col-lg-3"></div>
+                <!-- 3번 뉴스레터 -->
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s" style="background-color: white; padding-top: 1rem; margin-top: 10px; margin-right: 10px;">
+                    <p class="fs-5 fw-medium fst-italic text-primary">2024년 3월 뉴스레터&nbsp;<a href="https://stib.ee/eKzB"
+                            target="_blank"><img style="width:5%" src="img/arrow.png"></a></p>
+
+                    <p class="mb-4">🌷봄과 함께 선한마음연합의 9번째 뉴스레터가 도착했습니다!🌷 살랑살랑 봄바람에 설레는 마음인데요! 그 마음이 지속되도록 우리 이웃들의 설레는 소식 함께하실까요~?</p>
+
+                    <p class="mb-4">01 베이비박스 아기돌봄 봉사👶🍼<br>
+                        02 다품 곁부축이팀과 함께 쪽방촌에 전하는 사랑🤝<br>
+                        03 선덕원 공부와 활동</p>
+
+                    <p class="mb-4">- 선한마음연합 후원소식 -<br>
+                        하나, 농업회사법인 (주)백제 & 김정문 설렁탕 후원소식<br>
+                        둘, 특별후원금 소식💌</p>
+                </div>
+                <!-- 4번 뉴스레터 -->
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s" style="background-color: white; padding-top: 1rem; margin-top: 10px;">
+                    <p class="fs-5 fw-medium fst-italic text-primary">2024년 2월 뉴스레터&nbsp;<a href="https://stib.ee/cKzB"
+                            target="_blank"><img style="width:5%" src="img/arrow.png"></a></p>
+
+                    <p class="mb-4">안녕하세요! 선한마음연합의 8번째 뉴스레터가 도착했습니다. 여러분의 이웃을 향한 지속적인 사랑에 늘 감사드립니다. 그럼 기다리시던 선한마음의 소식 보러 가실까요? 👉🏻</p>
+
+                    <p class="mb-4">01 선한마음연합X에다러브 소망의 집 봉사<br>
+                        02 가온들찬빛 봉사활동<br>
+                        03 선덕원 공부와 활동<br>
+                        04 쪽방촌 어르신 봉사<br>
+                        05 쪽방촌 상담소의 만두 만들기🥟</p>
+
+                    <p class="mb-4">- 선한마음연합 새로운 소식 -<br>
+                        하나, 선한마음연합 페이스북 페이지 개설 소식!<br>
+                        둘, 김덕영 감독님의 영화 '건국전쟁' 후원소식🎥<br>
+                        셋,  제2회 자립준비청년 박람회 'MOVE ON FAIR'에 방문하다!<br>
+                        넷, 고려인 한글학교에서 즐기는 윷놀이!</p>
+
+
+                </div>
+                                <!-- 공백 -->
+                                <div class="col-lg-3"></div>
+                <div class="col-lg-8" style="text-align: center;"><p><a href="newsletter.html" style="text-decoration: underline; text-underline-position : under;"><I><h4>지난 뉴스레터 전체보기</h4></I></a></p></div>
             </div>
         </div>
     </div>
-
-    <!-- Testimonial Start -->
-    <!-- <div class="container-fluid py-5 my-5">
-        <div class="container py-5">
-            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="fs-5 fw-medium fst-italic text-white">회원가입</p>
-                <h1 class="display-6">더 많은 소식이 궁금하신가요?</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.5s">
-                <div class="testimonial-item p-4 p-lg-5">
-                    <p class="mb-4">선한마음연합의 더 많은 소식이 궁금하시다면<br> 회원가입을 통해 뉴스래터를 보내드립니다.</p>
-                    <div class="d-flex align-items-center justify-content-center">
-                        <a href="" class="btn btn-primary rounded-pill py-3 px-5" style="width: auto; margin:5% auto;">가입하기</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Testimonial End -->
-
-
-    <!-- Contact Start -->
-    <!-- <div class="container-xxl contact py-5">
-        <div class="container">
-            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-medium fst-italic text-primary">연락처</p>
-                <h1 class="display-6">Contact us</h1>
-            </div>
-            <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-8">
-                    <div class="row g-5">
-                        <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="btn-square mx-auto mb-3">
-                                <i class="fa fa-envelope fa-2x text-white"></i>
-                            </div>
-                            <p class="mb-2">goodheart.manager<br>@gmail.com</p>
-                        </div>
-                        <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="btn-square mx-auto mb-3">
-                                <i class="fa fa-phone fa-2x text-white"></i>
-                            </div>
-                            <p class="mb-2">+82 02-715-5610</p>
-                        </div>
-                        <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="btn-square mx-auto mb-3">
-                                <i class="fa fa-map-marker-alt fa-2x text-white"></i>
-                            </div>
-                            <p class="mb-2">서울특별시 마포구</p>
-                            <p class="mb-0">토정로37길 46 정우멘션 202호</p>
-                        </div>
-                        <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="btn-square mx-auto mb-3">
-                                <i class="fa-brands fa-instagram fa-2x text-white"></i>
-                                
-                            </div>
-                            <a href="https://www.instagram.com/goodheart_wu">@goodheart_wu</a>
-                        </div>
-                        <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="btn-square mx-auto mb-3">
-                                <i class="fa-brands fa-youtube fa-2x text-white"></i>
-                                
-                            </div>
-                            <a href="https://youtube.com/@goodheart_wu?si=xdC80CcEb1NQJ7ZG">선한마음연합 <br>유튜브</a>
-                        </div>
-                        <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="btn-square mx-auto mb-3">
-                                <i class="fa-brands fa-facebook-f fa-2x text-white"></i>
-                                
-                            </div>
-                            <a href="https://www.facebook.com/profile.php?id=61556359344975&mibextid=LQQJ4d">선한마음연합 <br>페이스북</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Contact Start -->
 
     <div id="footer"></div>
 
@@ -317,9 +345,19 @@
     <script src="js/main.js"></script>
 
     <script>
-        $(document).ready(function(){
-            document.getElementById("nav").innerHTML='<object type="text/html" data="nav.html"></object>';
-        })
+        // $(document).ready(function(){
+        //     document.getElementById("nav").innerHTML='<object type="text/html" data="nav.html"></object>';
+        // })
+        window.onscroll = function () {
+
+            var div = document.getElementById('hide_nav');
+            div.style.display = 'block';
+            if (window.scrollY < 100) {
+                div.style.display = 'none';
+                // Remove the event listener after the first alert to avoid multiple alerts
+                // window.onscroll = null;
+            }
+        };
     </script>
 </body>
 
