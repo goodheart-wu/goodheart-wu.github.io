@@ -195,9 +195,6 @@ body{
 }
 
 @media (max-width: 768px) {
-    #hide_nav{
-        top: 28px !important;
-    }
     #menu-logo {
         position: relative !important;
         width: 4vh !important;
