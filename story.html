@@ -43,12 +43,14 @@
             /* 세로 방향 중앙 정렬 */
             width: 60%;
             background-color: #ffffff;
-            border: 2px solid #333333;
+            border: 2px solid #ffffff;
             border-radius: 10px;
             overflow: hidden;
             margin: auto;
             margin-bottom: 100px;
-
+            margin-top: 5rem;
+            font-size: 1.7rem;
+            font-weight: bold;
         }
 
         .tab {
@@ -57,7 +59,7 @@
             text-align: center;
             cursor: pointer;
             background-color: #eeeeee;
-            border-right: 2px solid #333333;
+            border-right: 2px solid #ffffff;
             transition: background-color 0.3s ease;
         }
 
@@ -87,6 +89,20 @@
         .active-tab:hover {
             background-color: #45a049;
             /* 활성화된 탭의 호버 배경색 */
+        }
+
+        .box {
+            margin: auto;
+            width: 250px;
+            height: 250px;
+            border-radius: 70%;
+            overflow: hidden;
+        }
+
+        .profile {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -127,14 +143,6 @@
     <!-- Navbar End -->
 
 
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container text-center py-5">
-            <h1 class="display-2 text-light mb-4 animated slideInDown">활동</h1>
-        </div>
-    </div>
-    <!-- Page Header End -->
-
 
     <!-- Products Start -->
     <!-- <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 1800px !important;" >
@@ -150,54 +158,92 @@
     <!-- 선한마음소식 -->
     <div class="container-fluid py-5 my-5" style=" background-color: white;">
         <div class="container py-5">
-            <div class="tab-container">
+            <div class="container mb-5 pb-5">
+                <div class="row g-5 ">
+                    <div class="col-lg-12">
+                        <div class="row justify-content-center" style="justify-content: flex-start !important;">
+                            <div class="col-lg-8 text-start">
+                                <h1 class=" text-black">선한마음연합은</h1>
+                                <h1 class=" text-black animated zoomIn" style=" white-space : nowrap"><span
+                                        style="color: #761e3c;">국내 아동과 소외된 이웃이 사회의 한 일원</span>으로</h1>
+                                <h1 style="margin-bottom: 30px;" class=" text-black">살아갈 수 있도록 돕습니다.</h1>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="box" style="background: #BDBDBD;">
+                            <img class="profile" src="img/story_top1.jpg">
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="box" style="background: #BDBDBD;">
+                            <img class="profile" src="img/story_top2.jpg">
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="box" style="background: #BDBDBD;">
+                            <img class="profile" src="img/story_top3.jpg">
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="box" style="background: #BDBDBD;">
+                            <img class="profile" src="img/story_top4.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-container mt-5 pt-5">
                 <div class="tab"><a href="news.html">선한마음소식</a></div>
                 <div class="tab"><a href="volunteer.html"></a>봉사활동</div>
-                <div class="tab"><a href="forum.html"></a>포럼&컨퍼런스</div>
-                <div class="tab"><a href="education.html"></a>교육행사</div>
+                <div class="tab"><a href="forum.html"></a>교육&#183;행사</div>
+                <!-- <div class="tab"><a href="education.html"></a>교육행사</div> -->
             </div>
             <div style="background-color: white">
-            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <!-- <p class="fs-5 fw-medium fst-italic text-primary">활동</p> -->
-
-                <h1 class="display-6" >선한마음소식</h1>
-            </div>
-            <div class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.5s">
-                <a href="" class="d-block product-item rounded">
-                    <img src="img/product-1.jpg" alt="">
-                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
-                        <h4 class="text-primary">Green Tea</h4>
-                        <span class="text-body">Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum</span>
-                    </div>
-                </a>
-                <a href="" class="d-block product-item rounded">
-                    <img src="img/product-2.jpg" alt="">
-                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
-                        <h4 class="text-primary">Black Tea</h4>
-                        <span class="text-body">Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum</span>
-                    </div>
-                </a>
-                <a href="" class="d-block product-item rounded">
-                    <img src="img/product-3.jpg" alt="">
-                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
-                        <h4 class="text-primary">Spiced Tea</h4>
-                        <span class="text-body">Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum</span>
-                    </div>
-                </a>
-                <a href="" class="d-block product-item rounded">
-                    <img src="img/product-4.jpg" alt="">
-                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
-                        <h4 class="text-primary">Organic Tea</h4>
-                        <span class="text-body">Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum</span>
-                    </div>
-                </a>
-            </div>
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s">
+                <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s"
+                    style="max-width: 500px;">
+                    <!-- <p class="fs-5 fw-medium fst-italic text-primary">Our Products</p> -->
+                    <h1 class="display-6">선한마음소식</h1>
+                </div>
+                <div class="owl-carousel product-carousel fadeInUp" data-wow-delay="0.5s">
+                    <!-- 1 -->
+                    <a href="" class="d-block product-item rounded" style="color: black;">
+                        <div class="store-item position-relative text-center">
+                            <img class="img-fluid" src="img/baekjae_mou.png" alt="" style=" margin-bottom: 2vh;">
+                            <br>
+                            <strong>MOU</strong>
+                            <p>
+                                여러 단체와 MOU 체결을 통해 도움이 필요한 이웃들에게 생필품, 주거 환경, 식사 제공 및 교육, 활동 등을 제공</p>
+                        </div>
+                    </a>
+                    <!-- 2 -->
+                    <a href="" class="d-block product-item rounded" style="color: black;">
+                        <div class="store-item position-relative text-center">
+                            <img class="img-fluid" src="img/baekjae_mou.png" alt="" style=" margin-bottom: 2vh;">
+                            <br>
+                            <strong>MOU</strong>
+                            <p>
+                                여러 단체와 MOU 체결을 통해 도움이 필요한 이웃들에게 생필품, 주거 환경, 식사 제공 및 교육, 활동 등을 제공</p>
+                        </div>
+                    </a>
+                    <!-- 3 -->
+                    <a href="" class="d-block product-item rounded" style="color: black;">
+                        <div class="store-item position-relative text-center">
+                            <img class="img-fluid" src="img/baekjae_mou.png" alt="" style=" margin-bottom: 2vh;">
+                            <br>
+                            <strong>MOU</strong>
+                            <p>
+                                여러 단체와 MOU 체결을 통해 도움이 필요한 이웃들에게 생필품, 주거 환경, 식사 제공 및 교육, 활동 등을 제공</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s">
                 <a href="news.html" class="btn btn-primary rounded-pill py-3 px-5"
                     style="width: auto; margin: 5% 0 0 0;">더보기</a>
+            </div> -->
             </div>
         </div>
-    </div>
     </div>
 
     <!-- 봉사활동 -->
@@ -209,33 +255,33 @@
             </div>
             <div class="container-xxl py-5">
                 <div class="container">
-                    <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s"
-                        style="max-width: 500px;">
+                    <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                     </div>
                     <div class="row g-4">
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="store-item position-relative text-center">
-                                <a id="showDialogLink_onehada" href="https://stib.ee/TkuC" target="_blank"><img class="img-fluid" src="img/story_선덕원.jpg" alt="" ></a>
+                                <a id="showDialogLink_onehada" href=" https://stib.ee/ZdLD" target="_blank"><img
+                                        class="img-fluid" src="img/story_선덕원.jpg" alt=""></a>
                                 <p style="margin-top:10px">
                                     <strong class="fs-5">선덕원</strong><br>
-선한마음연합은 입양, 위탁 아동, 결손가정과 함께 생활하고 있는 선덕원의 아동 성장 교육과 활동을 위한 재능기부(영어, 국어, 탁구 등) 및 생활물품을 지원
+                                    입양, 위탁 아동, 결손가정과 함께 생활하고 있는 선덕원의 아동 성장 교육과 활동을 위한 재능기부(영어, 국어, 탁구 등) 및 생활물품 지원
                                 </p>
                             </div>
                         </div>
-        
+
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="store-item position-relative text-center">
-                                <img class="img-fluid" id="showDialogLink_baekjae" src="img/baekjae_mou.png" alt="" >
+                                <img class="img-fluid" id="showDialogLink_baekjae" src="img/baekjae_mou.png" alt="">
                             </div>
                         </div>
-        
+
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="store-item position-relative text-center">
-                                <img class="img-fluid" id="showDialogLink_social" src="img/social_mou.png" alt="" >
+                                <img class="img-fluid" id="showDialogLink_social" src="img/social_mou.png" alt="">
                             </div>
                         </div>
-    
-        
+
+
                     </div>
                 </div>
             </div>
@@ -247,7 +293,7 @@
         <div class="container py-5">
             <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <!-- <p class="fs-5 fw-medium fst-italic text-primary">Our Products</p> -->
-                <h1 class="display-6">포럼 & 컨퍼런스</h1>
+                <h1 class="display-6">교육&#183;행사</h1>
             </div>
             <div class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.5s">
                 <a href="" class="d-block product-item rounded">
@@ -286,10 +332,10 @@
     </div>
 
     <!-- 교육 & 행사 -->
-    <div class="container-fluid py-5 my-5" style="background-color: #eeeeee">
+    <!-- <div class="container-fluid py-5 my-5" style="background-color: #eeeeee">
         <div class="container py-5">
             <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <!-- <p class="fs-5 fw-medium fst-italic text-primary">Our Products</p> -->
+                
                 <h1 class="display-6">교육 & 행사</h1>
             </div>
             <div class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.5s">
@@ -326,7 +372,7 @@
                 <a href="" class="btn btn-primary rounded-pill py-3 px-5" style="width: auto; margin: 5% 0 0 0;">더보기</a>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- Footer Start -->
@@ -334,6 +380,8 @@
     <!-- Footer End -->
 
     <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
             class="bi bi-arrow-up"></i></a>
 
