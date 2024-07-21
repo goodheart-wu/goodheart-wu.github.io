@@ -46,6 +46,81 @@
     body {
         background-color: #ffffff;
     }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        position: absolute;
+        bottom: 20px;
+        /* Adjust this value to move the buttons higher or lower */
+        /* background-color: rgba(0, 0, 0, 0.5); */
+        border: none;
+        color: white;
+        font-size: 6rem;
+        padding: 0.5rem 1rem;
+        font-weight: bolder;
+        opacity: 0.4 !important;
+    }
+
+    .floating-buttons1 {
+        position: fixed;
+        bottom: 70px;
+        right: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+        z-index: 9999;
+    }
+    .floating-buttons2 {
+        position: fixed;
+        bottom: 20px;
+        right: 34px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+        z-index: 9999;
+    }
+    .floating-button1 {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-color: transparent;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+        border: none
+    }
+
+    .floating-button2 {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #e8d1da;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+        border: none
+    }
+
+    .floating-button2:hover {
+        background-color: #e0b7cc;
+    }
+
+    .floating-button1 img {
+        width: 90%;
+        height: 90%;
+        object-fit: scale-down;
+    }
+
+    .floating-button2 i {
+        font-size: 1.3rem;
+        /* 아이콘 크기 조정 */
+    }
 </style>
 
 <body>
@@ -55,19 +130,12 @@
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
-
-    <!-- <header id="nav"></header> -->
-
-    <!-- </div> -->
     <!-- Carousel Start -->
     <!-- 내려오는 네비 -->
     <div class="container-fluid sticky-top" id="hide_nav"
-        style="display: none; background-image: linear-gradient(rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.53)), url('img/main_header.jpg'); background-size: cover; backdrop-filter: blur(30px);">
+        style="display: block; position: absolute; backdrop-filter: blur(30px);">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar py-2 py-lg-0" id="scroll-nav">
-                <!-- <a href="index.html" style="width: 250px; height: auto">
-                    <img class="img-fluid" src="img/logo_horizon.png" alt="Logo">
-                </a> -->
                 <a href="index.html">
                     <img class="img-fluid" id="menu-logo" src="img/logo_white.png" alt="Logo" style="width: 8vh;">
                 </a>
@@ -81,7 +149,6 @@
                         <a href="about.html" class="nav-item nav-link" style="color: white;">소개</a>
                         <a href="story.html" class="nav-item nav-link" style="color: white;">활동</a>
                         <a href="newsletter.html" class="nav-item nav-link" style="color: white;">뉴스레터</a>
-                        <!-- <a href="store.html" class="nav-item nav-link">Store</a> -->
                         <a href="contact.html" class="nav-item nav-link" style="color: white;">문의하기</a>
                     </div>
                 </div>
@@ -91,53 +158,59 @@
 
     <div class="container-fluid px-0">
         <div id="header-carousel" class="carousel carousel-fade" data-bs-ride="carousel">
-            <!-- Navbar Start -->
-            <!-- <div style="background-image: url('img/main_header.jpg'); z-index: 9999;"> -->
-
-            <!-- Navbar End -->
-            <!-- 고정 네비 -->
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/main_header.jpg" alt="Image" style="height: 100vh; object-fit: cover;">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img class="w-100" src="img/main_header1.jpg" alt="Image" style="height: 100vh; object-fit: cover;">
                     <div class="carousel-caption"
                         style="background-color: rgba(0, 0, 0, 0.53); align-items: baseline; flex-direction:column ; padding-top: 0px; ">
-                        <div class="container-fluid sticky-top" style="backdrop-filter: blur(30px); ">
-                            <div class="container">
-                                <nav class="navbar navbar-expand-lg navbar py-2 py-lg-0" >
-                                    <!-- <a href="index.html" style="width: 250px; height: auto">
-                                        <img class="img-fluid" src="img/logo_horizon.png" alt="Logo">
-                                    </a> -->
-                                    <!-- <a href="index.html" class="navbar-brand" style="margin-top: 15px;"> -->
-                                    <a href="index.html"><img class="img-fluid" id="menu-logo" src="img/logo_white.png"
-                                            alt="Logo" style="width: 8vh;"></a>
-                                    <!-- </a> -->
-                                    <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
-                                        data-bs-target="#navbarCollapse"
-                                        style="background-image: url('img/hambuger.png'); height: 3vh; background-size: cover;">
-                                        <span style="background-image: url('img/hambuger.png');"></span>
-                                    </button>
-                                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                                        <div class="navbar-nav ms-auto">
-                                            <a href="index.html" class="nav-item nav-link"
-                                                style="color: white;">Home</a>
-                                            <a href="about.html" class="nav-item nav-link" style="color: white;">소개</a>
-                                            <a href="story.html" class="nav-item nav-link" style="color: white;">활동</a>
-                                            <a href="newsletter.html" class="nav-item nav-link"
-                                                style="color: white;">뉴스레터</a>
-                                            <!-- <a href="store.html" class="nav-item nav-link">Store</a> -->
-                                            <a href="contact.html" class="nav-item nav-link"
-                                                style="color: white;">문의하기</a>
-                                        </div>
-                                    </div>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="container" style="margin-top: 8vw">
+
+                        <div class="container" style="margin-top: 13%">
                             <div class="row justify-content-center" style="justify-content: flex-start !important;">
                                 <div class="col-lg-8 text-start">
                                     <p class="fs-3 text-white animated">사랑으로 품다</p>
-                                    <h1 class="display-3 text-white mb-4 animated zoomIn">선한마음연합</h1>
-                                    <p style="margin-bottom: 30px; white-space: nowrap;" class="fs-6 text-white animated">선한마음연합은 아이들을 보호하고
+                                    <h1 class="display-3 text-white mb-4 ">선한마음연합</h1>
+                                    <p style="margin-bottom: 30px; white-space: nowrap;"
+                                        class="fs-6 text-white animated">선한마음연합은 아이들을 보호하고
+                                        아동 인권을 증진하여 전세계 모든 아이들이 행복한 사회를 만들기 위해 일하는 시민단체입니다.</p>
+                                    <a><a href="https://forms.gle/MV5TuS8oMbS9qsBg9" class="fs-6" target="_blank"
+                                            style="margin-top: 30px; color: white; text-decoration: underline; text-underline-position : under;">회원가입</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img class="w-100" src="img/main_header2.jpg" alt="Image" style="height: 100vh; object-fit: cover;">
+                    <div class="carousel-caption"
+                        style="background-color: rgba(0, 0, 0, 0.53); align-items: baseline; flex-direction:column ; padding-top: 0px; ">
+
+                        <div class="container" style="margin-top: 13%">
+                            <div class="row justify-content-center" style="justify-content: flex-start !important;">
+                                <div class="col-lg-8 text-start">
+                                    <p class="fs-3 text-white animated">사랑으로 품다</p>
+                                    <h1 class="display-3 text-white mb-4 ">선한마음연합</h1>
+                                    <p style="margin-bottom: 30px; white-space: nowrap;"
+                                        class="fs-6 text-white animated">선한마음연합은 아이들을 보호하고
+                                        아동 인권을 증진하여 전세계 모든 아이들이 행복한 사회를 만들기 위해 일하는 시민단체입니다.</p>
+                                    <a><a href="https://forms.gle/MV5TuS8oMbS9qsBg9" class="fs-6" target="_blank"
+                                            style="margin-top: 30px; color: white; text-decoration: underline; text-underline-position : under;">회원가입</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img class="w-100" src="img/main_header3.jpg" alt="Image" style="height: 100vh; object-fit: cover;">
+                    <div class="carousel-caption"
+                        style="background-color: rgba(0, 0, 0, 0.53); align-items: baseline; flex-direction:column ; padding-top: 0px; ">
+
+                        <div class="container" style="margin-top: 13%">
+                            <div class="row justify-content-center" style="justify-content: flex-start !important;">
+                                <div class="col-lg-8 text-start">
+                                    <p class="fs-3 text-white animated">사랑으로 품다</p>
+                                    <h1 class="display-3 text-white mb-4 ">선한마음연합</h1>
+                                    <p style="margin-bottom: 30px; white-space: nowrap;"
+                                        class="fs-6 text-white animated">선한마음연합은 아이들을 보호하고
                                         아동 인권을 증진하여 전세계 모든 아이들이 행복한 사회를 만들기 위해 일하는 시민단체입니다.</p>
                                     <a><a href="https://forms.gle/MV5TuS8oMbS9qsBg9" class="fs-6" target="_blank"
                                             style="margin-top: 30px; color: white; text-decoration: underline; text-underline-position : under;">회원가입</a>
@@ -147,16 +220,14 @@
                     </div>
                 </div>
             </div>
-            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-            </button> -->
+            </button>
         </div>
     </div>
 
@@ -235,21 +306,6 @@
     </div> -->
     <!-- Article End -->
 
-
-    <!-- Video Start -->
-    <div class="" style="position:relative; width: 100%; height: 0; padding-top: 56%;">
-        <iframe style="position:absolute; top: 0; left: 0; width: 100%; height:100%;" allow="accelerometer; autoplay;"
-            src="https://www.youtube.com/embed/4_8Os_C5naI?autoplay=0"></iframe>
-    </div>
-
-    <div class="" style="position:relative; width: 100%; height: 0; padding-top: 56%;">    <iframe class="section_vg _section_vg active" id="player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="TtGH" 
-        style="position:absolute; top: 0; left: 0; width: 100%; height:100%;"
-        src="https://www.youtube.com/embed/_cqpIn98ZKU?si=eC-Te6U7argW753x?version=3&vq=hd1080" style="top: -10px;"></iframe></div>
-
-    <!-- <div id="player"></div> -->
-    <!-- Video End -->
-
-
     <div class="py-5"
         style="background-color: #F2F2F2 ; padding-top: 7rem !important; padding-bottom: 7rem !important;">
         <div class="container">
@@ -271,7 +327,8 @@
                     style="background-color: white; padding-top: 1rem; margin-right: 10px; margin-top: 30vh;">
                     <p class="fs-5 fw-medium fst-italic ">2024년 6월 뉴스레터&nbsp;<a href="https://stib.ee/4a8D"
                             target="_blank"><img style="width:5%" src="img/arrow.png"></a></p>
-                    <p class="mb-4">뜨거운 햇빛이 시작되는 여름날, 여러분들의 한 달은 어떠셨나요?? 저희 선한마음연합은 이웃들과 함께 하며 열정적인 한 달을 보냈습니다. 여러분들도 우리 이웃들과 함께하는 이 열정을 함께 느끼시기를 기대하며, 이웃들을 향한 뜨거운 사랑과 관심으로 이 더위를 날려버리기를 바랍니다. 6월의 소식도 함께 해요!</p>
+                    <p class="mb-4">뜨거운 햇빛이 시작되는 여름날, 여러분들의 한 달은 어떠셨나요?? 저희 선한마음연합은 이웃들과 함께 하며 열정적인 한 달을 보냈습니다. 여러분들도 우리
+                        이웃들과 함께하는 이 열정을 함께 느끼시기를 기대하며, 이웃들을 향한 뜨거운 사랑과 관심으로 이 더위를 날려버리기를 바랍니다. 6월의 소식도 함께 해요!</p>
                     <p class="mb-4">01 선덕원의 6월 여름나기<br>
                         02 베이비박스 아기돌봄 봉사활동<br>
                         03 쪽방촌 봉사활동<br>
@@ -345,10 +402,16 @@
     <div id="footer"></div>
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
-            class="bi bi-arrow-up"></i></a>
-
-
+    <div class="floating-buttons1">
+        <button class="floating-button1">
+            <img src="/img/top_logo2.png" alt="Image Button">
+        </button>
+    </div>
+    <div class="floating-buttons2">
+        <button class="floating-button2">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+    </div>
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -359,55 +422,49 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-
     <script>
-        // $(document).ready(function(){
-        //     document.getElementById("nav").innerHTML='<object type="text/html" data="nav.html"></object>';
-        // })
         window.onscroll = function () {
 
             var div = document.getElementById('hide_nav');
-            div.style.display = 'block';
+            div.style.position = 'fixed';
             if (window.scrollY < 100) {
-                div.style.display = 'none';
-                // Remove the event listener after the first alert to avoid multiple alerts
-                // window.onscroll = null;
+                div.style.position = 'absolute';
             }
         };
     </script>
-
-<!--     
     <script>
-     
-     var tag = document.createElement('script');
+        document.addEventListener('DOMContentLoaded', function () {
+            var carouselElement = document.querySelector('#header-carousel');
+            var prevButton = carouselElement.querySelector('.carousel-control-prev');
+            var nextButton = carouselElement.querySelector('.carousel-control-next');
+            var carouselItems = carouselElement.querySelectorAll('.carousel-item');
+            var totalItems = carouselItems.length;
 
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+            var updateButtonLabels = function (index) {
+                console.log(index)
+                if (index == 0) {
+                    prevButton.innerHTML = 1;
+                    nextButton.innerHTML = 2;
+                } else if (index == 1) {
+                    prevButton.innerHTML = 2;
+                    nextButton.innerHTML = 3;
+                } else if (index == 2) {
+                    prevButton.innerHTML = 3;
+                    nextButton.innerHTML = 1;
+                }
 
-var player;
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('player', {
-    height: '1200',
-    width: '640',
-    videoId: '_cqpIn98ZKU',
-    events: {
-      'onReady': onPlayerReady,
-      'onStateChange': onPlayerStateChange
-    }
-  });
-}
 
-function onPlayerReady(event) {
-  event.target.playVideo();
-}
+            };
 
-function onPlayerStateChange(event){
-    if (event.data == YT.PlayerState.PLAYING) {
-    event.target.setPlaybackQuality('highers');
-    }
-}
-    </script> -->
+            carouselElement.addEventListener('slid.bs.carousel', function (event) {
+                var newIndex = event.to;
+                updateButtonLabels(newIndex);
+            });
+
+            // Initialize button labels
+            updateButtonLabels(0);
+        });
+    </script>
 </body>
 
 </html>
