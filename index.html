@@ -74,7 +74,6 @@
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse"
                     style="background-image: url('img/hambuger.png'); height: 3vh; background-size: cover;">
-                    <span style=""></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
@@ -243,11 +242,16 @@
             src="https://www.youtube.com/embed/4_8Os_C5naI?autoplay=0"></iframe>
     </div>
 
+    <div class="" style="position:relative; width: 100%; height: 0; padding-top: 56%;">    <iframe class="section_vg _section_vg active" id="player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="TtGH" 
+        style="position:absolute; top: 0; left: 0; width: 100%; height:100%;"
+        src="https://www.youtube.com/embed/_cqpIn98ZKU?si=eC-Te6U7argW753x?version=3&vq=hd1080" style="top: -10px;"></iframe></div>
+
+    <!-- <div id="player"></div> -->
     <!-- Video End -->
 
 
-    <div class="container-xxl py-5"
-        style="background-color: #F2F2F2 ; max-width: 1800px !important; padding-top: 7rem !important; padding-bottom: 7rem !important;">
+    <div class="py-5"
+        style="background-color: #F2F2F2 ; padding-top: 7rem !important; padding-bottom: 7rem !important;">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-2 wow fadeIn" data-wow-delay="0.1s" style="margin-right: 2rem;">
@@ -371,6 +375,39 @@
             }
         };
     </script>
+
+<!--     
+    <script>
+     
+     var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    height: '1200',
+    width: '640',
+    videoId: '_cqpIn98ZKU',
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+}
+
+function onPlayerReady(event) {
+  event.target.playVideo();
+}
+
+function onPlayerStateChange(event){
+    if (event.data == YT.PlayerState.PLAYING) {
+    event.target.setPlaybackQuality('highers');
+    }
+}
+    </script> -->
 </body>
 
 </html>
