@@ -62,7 +62,8 @@
             border-right: 2px solid #ffffff;
             transition: background-color 0.3s ease;
         }
-        .tab > a{
+
+        .tab>a {
             color: black;
         }
 
@@ -167,8 +168,9 @@
                         <div class="row justify-content-center" style="justify-content: flex-start !important;">
                             <div class="col-lg-8 text-start">
                                 <h1 class=" text-black">선한마음연합은</h1>
-                                <h1 class=" text-black animated zoomIn" style=" white-space : nowrap"><span
-                                        style="color: #761e3c;">국내 아동과 소외된 이웃이 사회의 한 일원</span>으로</h1>
+                                <!-- animated zoomIn class 삭제 -->
+                                <h1 class=" text-black" style=" white-space : nowrap"><span style="color: #761e3c;">국내
+                                        아동과 소외된 이웃이 사회의 한 일원</span>으로</h1>
                                 <h1 style="margin-bottom: 30px;" class=" text-black">살아갈 수 있도록 돕습니다.</h1>
 
                             </div>
@@ -197,62 +199,71 @@
                 </div>
             </div>
 
-            <div class="tab-container mt-5 pt-5">
-                <div class="tab"><a href="news.html">선한마음소식</a></div>
-                <div class="tab"><a href="volunteer.html">봉사활동</a></div>
-                <div class="tab"><a href="forum.html">교육&#183;행사</a></div>
+            <div class="tab-container mt-5 pt-5" id="tab_1">
+                <div class="tab"><a href="#tab_1">선한마음소식</a></div>
+                <div class="tab"><a href="#tab_2">봉사활동</a></div>
+                <div class="tab"><a href="#tab_3">교육&#183;행사</a></div>
                 <!-- <div class="tab"><a href="education.html"></a>교육행사</div> -->
             </div>
 
-            <div class="container-xxl py-5" style="padding-bottom: 0 !important; ">
+            <div class="container-xxl py-5"  style="padding-bottom: 0 !important; ">
                 <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s"
-                style="max-width: 500px;">
-                <!-- <p class="fs-5 fw-medium fst-italic text-primary">Our Products</p> -->
-                <h1 class="display-6">선한마음소식</h1>
-            </div>
+                    style="max-width: 500px;">
+                    <!-- <p class="fs-5 fw-medium fst-italic text-primary">Our Products</p> -->
+                    <h1 class="display-6">선한마음소식</h1>
+                </div>
                 <div class="container">
                     <div class="row g-4">
-                        
+
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <a href="https://stib.ee/ybLD" class="d-block product-item rounded" style="color: black;">
-                            <div class="store-item position-relative text-center">
-                                <img class="img-fluid" src="img/baekjae_mou.png" alt="" style="height: 30vh; margin-bottom: 2vh; object-fit: contain;">
-                                <br>
-                                <strong>MOU</strong><p>
-                                    여러 단체와 MOU 체결을 통해 도움이 필요한 이웃들에게 생필품, 주거 환경, 식사 제공 및 교육, 활동 등을 제공</p>
-                            </div>
-                        </a>
-                    </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                            <a href="https://stib.ee/HeLD" class="d-block product-item rounded" style="color: black;">
-                            <div class="store-item position-relative text-center">
-                                <img class="img-fluid" id="showDialogLink_social" src="img/story_news2.jpg" alt="" style="height: 30vh; margin-bottom: 2vh; object-fit: contain;">
-                                <br>
-                                <strong>후원</strong><p>
-                                    단체들과 선한마음연합 회원들이 후원금, 생필품, 식사, 가구 등 후원 활동 지원</p>
-                            </div>
+                            <a href="https://stib.ee/ybLD" class="d-block product-item rounded" style="color: black;" target="_blank">
+                                <div class="store-item position-relative text-center">
+                                    <img class="img-fluid" src="img/baekjae_mou.png" alt=""
+                                        style="height: 30vh; margin-bottom: 2vh; object-fit: contain;">
+                                    <br>
+                                    <strong>MOU</strong>
+                                    <p>
+                                        여러 단체와 MOU 체결을 통해 도움이 필요한 이웃들에게 생필품, 주거 환경, 식사 제공 및 교육, 활동 등을 제공</p>
+                                </div>
                             </a>
                         </div>
-        
-        
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="store-item position-relative text-center">
-                                <img class="img-fluid" id="showDialogLink_social" src="img/story_news3.jpg" alt="" style="height: 30vh; margin-bottom: 2vh; object-fit: contain;">
-                                <br>
-                                <strong>사단법인 지정</strong><p>
-                                    2023년 10월 선한마음연합 사단법인 지정</p>
-                            </div>
+                            <a href="https://stib.ee/HeLD" class="d-block product-item rounded" style="color: black;" target="_blank">
+                                <div class="store-item position-relative text-center">
+                                    <img class="img-fluid" id="showDialogLink_social" src="img/story_news2.jpg" alt=""
+                                        style="height: 30vh; margin-bottom: 2vh; object-fit: contain;">
+                                    <br>
+                                    <strong>후원</strong>
+                                    <p>
+                                        단체들과 선한마음연합 회원들이 후원금, 생필품, 식사, 가구 등 후원 활동 지원</p>
+                                </div>
+                            </a>
                         </div>
-        
+
+
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <a href="https://stib.ee/beLD" class="d-block product-item rounded" style="color: black;"  target="_blank" >
+                                <div class="store-item position-relative text-center">
+                                    <img class="img-fluid" id="showDialogLink_social" src="img/story_news3.jpg" alt=""
+                                        style="height: 30vh; margin-bottom: 2vh; object-fit: contain;">
+                                    <br>
+                                    <strong>사단법인 지정</strong>
+                                    <p>
+                                        2023년 10월 선한마음연합 사단법인 지정</p>
+                                </div>
+
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
 
     <!-- 봉사활동 -->
-    <div class="container-fluid py-5 my-5" style="background-color: #eeeeee">
+    <div class="container-fluid py-5 my-5" id="tab_2" style="background-color: #eeeeee">
         <div class="container py-5">
             <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <!-- <p class="fs-5 fw-medium fst-italic text-primary">Our Products</p> -->
@@ -265,8 +276,8 @@
                     <div class="row g-4">
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="store-item position-relative text-center">
-                                <a href="https://stib.ee/ZdLD" target="_blank"><img
-                                        class="img-fluid" src="img/story_선덕원.jpg" alt=""></a>
+                                <a href="https://stib.ee/ZdLD" target="_blank"><img class="img-fluid"
+                                        src="img/story_선덕원.jpg" alt=""></a>
                                 <p style="margin-top:10px">
                                     <strong class="fs-5">선덕원</strong><br>
                                     입양, 위탁 아동, 결손가정과 함께 생활하고 있는 선덕원의 아동 성장 교육과 활동을 위한 재능기부(영어, 국어, 탁구 등) 및 생활물품 지원
@@ -276,8 +287,8 @@
 
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="store-item position-relative text-center">
-                                <a href="https://stib.ee/bdLD" target="_blank"><img
-                                        class="img-fluid" src="img/story_소망의집.jpg" alt=""></a>
+                                <a href="https://stib.ee/bdLD" target="_blank"><img class="img-fluid"
+                                        src="img/story_소망의집.jpg" alt=""></a>
                                 <p style="margin-top:10px">
                                     <strong class="fs-5">소망의집</strong><br>
                                     중증 장애인 정신재활시설 입소자를 위한 식사 봉사 및 생활용품 지원
@@ -287,44 +298,44 @@
 
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="store-item position-relative text-center">
-                                <a href=" https://stib.ee/ZdLD" target="_blank"><img
-                                        class="img-fluid" src="img/story_선덕원.jpg" alt=""></a>
+                                <a href="https://stib.ee/feLD" target="_blank"><img class="img-fluid"
+                                        src="img/story_chungshin.jpg" alt="" style="height:300px"></a>
                                 <p style="margin-top:10px">
-                                    <strong class="fs-5">선덕원</strong><br>
-                                    입양, 위탁 아동, 결손가정과 함께 생활하고 있는 선덕원의 아동 성장 교육과 활동을 위한 재능기부(영어, 국어, 탁구 등) 및 생활물품 지원
+                                    <strong class="fs-5">충신다품</strong><br>
+                                    사회적 소외계층(노인, 다문화 가정 등)의 생활물품 지원 및 식사지원
                                 </p>
                             </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="store-item position-relative text-center">
-                                <a href=" https://stib.ee/ZdLD" target="_blank"><img
-                                        class="img-fluid" src="img/story_선덕원.jpg" alt=""></a>
+                                <a href="https://stib.ee/XdLD" target="_blank"><img class="img-fluid"
+                                        src="img/story_gaon.jpg" alt="" style="height: 300px;"></a>
                                 <p style="margin-top:10px">
-                                    <strong class="fs-5">선덕원</strong><br>
-                                    입양, 위탁 아동, 결손가정과 함께 생활하고 있는 선덕원의 아동 성장 교육과 활동을 위한 재능기부(영어, 국어, 탁구 등) 및 생활물품 지원
+                                    <strong class="fs-5">가온들찬빛</strong><br>
+                                    양산에 위치한 지적장애인 입소자를 위한 식사&시설 청소 봉사 및 생활용품지원 
                                 </p>
                             </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="store-item position-relative text-center">
-                                <a href=" https://stib.ee/ZdLD" target="_blank"><img
-                                        class="img-fluid" src="img/story_선덕원.jpg" alt=""></a>
+                                <a href="https://stib.ee/DeLD" target="_blank"><img class="img-fluid"
+                                        src="img/story_babybox.jpg" alt=""></a>
                                 <p style="margin-top:10px">
-                                    <strong class="fs-5">선덕원</strong><br>
-                                    입양, 위탁 아동, 결손가정과 함께 생활하고 있는 선덕원의 아동 성장 교육과 활동을 위한 재능기부(영어, 국어, 탁구 등) 및 생활물품 지원
+                                    <strong class="fs-5">베이비박스</strong><br>
+                                    보호가 필요한 아기의 성장과 생활을 돕는 시설
                                 </p>
                             </div>
                         </div>
-                        
+
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="store-item position-relative text-center">
-                                <a href=" https://stib.ee/ZdLD" target="_blank"><img
-                                        class="img-fluid" src="img/story_선덕원.jpg" alt=""></a>
+                                <a href="https://stib.ee/ReLD" target="_blank"><img class="img-fluid"
+                                        src="img/story_jalip.jpg" alt=""></a>
                                 <p style="margin-top:10px">
-                                    <strong class="fs-5">선덕원</strong><br>
-                                    입양, 위탁 아동, 결손가정과 함께 생활하고 있는 선덕원의 아동 성장 교육과 활동을 위한 재능기부(영어, 국어, 탁구 등) 및 생활물품 지원
+                                    <strong class="fs-5">자립운동청년 & 보호종료아동</strong><br>
+                                    보호종료 아동에게 직업 훈련의 기회를 제공하여 자신의 적성과 재능에 맞는 취업 연계 / 안전하고 건강한 성장을 위한 주거 환경 제공  / 보호종료 아동에게 반찬 지원
                                 </p>
                             </div>
                         </div>
@@ -336,54 +347,62 @@
     </div>
 
     <!-- 교육&#183;행사 -->
-    <div class="container-fluid py-5 my-5" style="background-color: white">
+    <div class="container-fluid py-5 my-5" id="tab_3" style="background-color: white">
         <div class="container py-5">
 
             <div class="container-xxl py-5" style="padding-bottom: 0 !important; ">
                 <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s"
-                style="max-width: 500px;">
-                <!-- <p class="fs-5 fw-medium fst-italic text-primary">Our Products</p> -->
-                <h1 class="display-6">교육&#183;행사</h1>
-            </div>
+                    style="max-width: 500px;">
+                    <!-- <p class="fs-5 fw-medium fst-italic text-primary">Our Products</p> -->
+                    <h1 class="display-6">교육&#183;행사</h1>
+                </div>
                 <div class="container">
                     <div class="row g-4">
-                        
+
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <a href="https://stib.ee/ybLD" class="d-block product-item rounded" style="color: black;">
-                            <div class="store-item position-relative text-center">
-                                <img class="img-fluid" src="img/baekjae_mou.png" alt="" style="height: 30vh; margin-bottom: 2vh; object-fit: contain;">
-                                <br>
-                                <strong>MOU</strong><p>
-                                    여러 단체와 MOU 체결을 통해 도움이 필요한 이웃들에게 생필품, 주거 환경, 식사 제공 및 교육, 활동 등을 제공</p>
-                            </div>
-                        </a>
-                    </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                            <a href="https://stib.ee/HeLD" class="d-block product-item rounded" style="color: black;">
-                            <div class="store-item position-relative text-center">
-                                <img class="img-fluid" id="showDialogLink_social" src="img/story_news2.jpg" alt="" style="height: 30vh; margin-bottom: 2vh; object-fit: contain;">
-                                <br>
-                                <strong>후원</strong><p>
-                                    단체들과 선한마음연합 회원들이 후원금, 생필품, 식사, 가구 등 후원 활동 지원</p>
-                            </div>
+                            <a href="https://stib.ee/t6SD" class="d-block product-item rounded" style="color: black;">
+                                <div class="store-item position-relative text-center">
+                                    <img class="img-fluid" src="img/story_hanain.jpg" alt=""
+                                        style="height: 30vh; margin-bottom: 2vh; object-fit: contain;">
+                                    <br>
+                                    <strong>하나인 글로벌 여성포럼</strong>
+                                    <p>
+                                        전세계 여성을 위한 글로벌 여성 포럼 개최
+                                </div>
                             </a>
                         </div>
-        
-        
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="store-item position-relative text-center">
-                                <img class="img-fluid" id="showDialogLink_social" src="img/story_news3.jpg" alt="" style="height: 30vh; margin-bottom: 2vh; object-fit: contain;">
-                                <br>
-                                <strong>사단법인 지정</strong><p>
-                                    2023년 10월 선한마음연합 사단법인 지정</p>
-                            </div>
+                            <a href="https://stib.ee/h7SD" class="d-block product-item rounded" style="color: black;">
+                                <div class="store-item position-relative text-center">
+                                    <img class="img-fluid" id="showDialogLink_social" src="img/onehada2.jpg" alt=""
+                                        style="height: 30vh; margin-bottom: 2vh; object-fit: contain;">
+                                    <br>
+                                    <strong>제2회 원하다 컨퍼런스 | 선한마음연합 비전발표</strong>
+                                    <p>
+                                        대한민국 통일 플랫폼 원하다 X 선한마음연합 비전 발표</p>
+                                </div>
+                            </a>
                         </div>
-        
+
+
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <a href="https://stib.ee/S8SD" class="d-block product-item rounded" style="color: black;">
+                                <div class="store-item position-relative text-center">
+                                    <img class="img-fluid" id="showDialogLink_social" src="img/goodheart_con.jpg" alt=""
+                                        style="height: 30vh; margin-bottom: 2vh; object-fit: contain;">
+                                    <br>
+                                    <strong>선한마음연합 원데이컨퍼런스</strong>
+                                    <p>
+                                        고아와 한부모 가정의 여성 그리고 소외 계층이 사회의 한 구성원으로 살아가도록 도우며 교육하는 원데이 컨퍼런스</p>
+                                </div>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            </div>
-            </div>
+        </div>
+    </div>
 
     <!-- 교육 & 행사 -->
     <!-- <div class="container-fluid py-5 my-5" style="background-color: #eeeeee">

@@ -157,7 +157,7 @@
     </div>
 
     <div class="container-fluid px-0">
-        <div id="header-carousel" class="carousel carousel-fade" data-bs-ride="carousel">
+        <div id="header-carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="2000">
                     <img class="w-100" src="img/main_header1.jpg" alt="Image" style="height: 100vh; object-fit: cover;">
@@ -403,12 +403,12 @@
 
     <!-- Back to Top -->
     <div class="floating-buttons1">
-        <button class="floating-button1">
+        <button class="floating-button1" onclick="location.href='https://flax-bottom-64e.notion.site/b58d1b42d4034ff5b577f84e1395e79e'">
             <img src="/img/top_logo2.png" alt="Image Button">
         </button>
     </div>
     <div class="floating-buttons2">
-        <button class="floating-button2">
+        <button class="floating-button2" onclick="location.href='#'">
             <i class="bi bi-arrow-up"></i>
         </button>
     </div>
@@ -441,7 +441,7 @@
             var totalItems = carouselItems.length;
 
             var updateButtonLabels = function (index) {
-                console.log(index)
+                // console.log(index)
                 if (index == 0) {
                     prevButton.innerHTML = 1;
                     nextButton.innerHTML = 2;
